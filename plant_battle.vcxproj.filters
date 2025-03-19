@@ -19,6 +19,12 @@
     <Filter Include="源文件\scene">
       <UniqueIdentifier>{c1d97a08-5697-4e34-9e19-ed0e07a334b0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\player">
+      <UniqueIdentifier>{c3655553-0700-4e62-a465-c481a086184f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\player">
+      <UniqueIdentifier>{5c7095da-9964-4379-a250-f32035a254ff}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="sources\Animation.cpp">
@@ -56,6 +62,15 @@
     </ClCompile>
     <ClCompile Include="sources\GameScene.cpp">
       <Filter>源文件\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Player.cpp">
+      <Filter>源文件\player</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\PeashooterPlayer.cpp">
+      <Filter>源文件\player</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\SunflowerPlayer.cpp">
+      <Filter>源文件\player</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -97,6 +112,18 @@
     </ClInclude>
     <ClInclude Include="sources\GameScene.h">
       <Filter>头文件\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Player.h">
+      <Filter>头文件\player</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\PeashooterPlayer.h">
+      <Filter>头文件\player</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\SunflowerPlayer.h">
+      <Filter>头文件\player</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\PlayerID.h">
+      <Filter>头文件\player</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

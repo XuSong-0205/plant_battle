@@ -1,5 +1,11 @@
 #include "SelectScene.h"
 #include "Utils.h"
+#include "Player.h"
+#include "PeashooterPlayer.h"
+#include "SunflowerPlayer.h"
+#include "PlayerID.h"
+
+///////////////////////////////////////////
 
 
 extern IMAGE img_VS;
@@ -29,6 +35,9 @@ extern Atlas atlas_sunflower_idle_right;
 
 extern IMAGE img_avatar_peashooter;
 extern IMAGE img_avatar_sunflower;
+
+extern std::unique_ptr<Player> g_player_1;
+extern std::unique_ptr<Player> g_player_2;
 
 ///////////////////////////////////////////
 
@@ -262,4 +271,27 @@ void S_SelectScene::on_input(const ExMessage& msg)
 void S_SelectScene::on_exit()
 {
 	MCI_MUSIC_STOP("bgm_menu");
+
+	switch (m_player_type_1p)
+	{
+		case PlayerType::Peashooter:
+			g_player_1 = std::make_unique<PeashooterPlayer>();
+			break;
+		case PlayerType::Sunflower:
+			g_player_1 = std::make_unique<SunflowerPlayer>();
+			break;
+	}
+	g_player_1->set_id(PlayerID::P1);
+
+	switch (m_player_type_2p)
+	{
+		case PlayerType::Peashooter:
+			g_player_2 = std::make_unique<PeashooterPlayer>();
+			break;
+		case PlayerType::Sunflower:
+			g_player_2 = std::make_unique<SunflowerPlayer>();
+			break;
+	}
+	g_player_2->set_id(PlayerID::P2);
+
 }

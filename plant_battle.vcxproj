@@ -135,10 +135,13 @@
     <ClCompile Include="sources\GameScene.cpp" />
     <ClCompile Include="sources\main.cpp" />
     <ClCompile Include="sources\MenuScene.cpp" />
+    <ClCompile Include="sources\PeashooterPlayer.cpp" />
     <ClCompile Include="sources\Platform.cpp" />
+    <ClCompile Include="sources\Player.cpp" />
     <ClCompile Include="sources\Resources.cpp" />
     <ClCompile Include="sources\SceneManager.cpp" />
     <ClCompile Include="sources\SelectScene.cpp" />
+    <ClCompile Include="sources\SunflowerPlayer.cpp" />
     <ClCompile Include="sources\Timer.cpp" />
     <ClCompile Include="sources\Utils.cpp" />
   </ItemGroup>
@@ -148,11 +151,15 @@
     <ClInclude Include="sources\Camera.h" />
     <ClInclude Include="sources\GameScene.h" />
     <ClInclude Include="sources\MenuScene.h" />
+    <ClInclude Include="sources\PeashooterPlayer.h" />
     <ClInclude Include="sources\Platform.h" />
+    <ClInclude Include="sources\Player.h" />
+    <ClInclude Include="sources\PlayerID.h" />
     <ClInclude Include="sources\Resources.h" />
     <ClInclude Include="sources\Scene.h" />
     <ClInclude Include="sources\SceneManager.h" />
     <ClInclude Include="sources\SelectScene.h" />
+    <ClInclude Include="sources\SunflowerPlayer.h" />
     <ClInclude Include="sources\Timer.h" />
     <ClInclude Include="sources\Utils.h" />
     <ClInclude Include="sources\Vector2.h" />

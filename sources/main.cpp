@@ -12,17 +12,22 @@
 #include "SceneManager.h"
 #include "Camera.h"
 #include "Platform.h"
+#include "Player.h"
 #include "Resources.h"
 
 ///////////////////////////////////////
 
-bool is_debug = false;					// 是否开启调试模式
+bool g_is_debug = false;				// 是否开启调试模式
 
-bool is_game_running = true;			// 游戏是否正在运行
+bool g_is_game_running = true;			// 游戏是否正在运行
 
-Camera main_camera;						// 主摄像机
+Camera g_main_camera;					// 主摄像机
 
-std::vector<Platform> platform_list;	// 游戏中的平台列表
+std::vector<Platform> g_platform_list;	// 游戏中的平台列表
+
+std::unique_ptr<Player> g_player_1;		// 玩家 1
+std::unique_ptr<Player> g_player_2;		// 玩家 2
+
 
 ///////////////////////////////////////
 
@@ -50,7 +55,7 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 
 
 	ExMessage msg;
-	while (is_game_running)
+	while (g_is_game_running)
 	{
 		const auto frame_start_time = GetTickCount64();
 
@@ -67,7 +72,7 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 
 
 		cleardevice();
-		scene_manager.on_draw(main_camera);
+		scene_manager.on_draw(g_main_camera);
 
 		FlushBatchDraw();
 

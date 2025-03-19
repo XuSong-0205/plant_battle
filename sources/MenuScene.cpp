@@ -2,7 +2,7 @@
 #include "Utils.h"
 #include "SceneManager.h"
 
-extern bool is_game_running;
+extern bool g_is_game_running;
 
 
 void S_MenuScene::on_enter() 
@@ -26,7 +26,7 @@ void S_MenuScene::on_input(const ExMessage& msg)
 	{
 		if (msg.vkcode == VK_ESCAPE)
 		{
-			is_game_running = false;
+			g_is_game_running = false;
 		}
 		else
 		{
