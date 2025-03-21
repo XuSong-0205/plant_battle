@@ -25,6 +25,12 @@
     <Filter Include="源文件\player">
       <UniqueIdentifier>{5c7095da-9964-4379-a250-f32035a254ff}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\bullet">
+      <UniqueIdentifier>{6d47bf70-8488-4f21-aa9e-0468265d3728}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\bullet">
+      <UniqueIdentifier>{bd65f11d-aa38-4fcc-a5cb-9ff157a2d9c2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="sources\Animation.cpp">
@@ -71,6 +77,21 @@
     </ClCompile>
     <ClCompile Include="sources\SunflowerPlayer.cpp">
       <Filter>源文件\player</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\SunBullet.cpp">
+      <Filter>源文件\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\PeaBullet.cpp">
+      <Filter>源文件\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Bullet.cpp">
+      <Filter>源文件\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\SunBulletEx.cpp">
+      <Filter>源文件\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\StatusBar.cpp">
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -124,6 +145,21 @@
     </ClInclude>
     <ClInclude Include="sources\PlayerID.h">
       <Filter>头文件\player</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Bullet.h">
+      <Filter>头文件\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\SunBullet.h">
+      <Filter>头文件\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\PeaBullet.h">
+      <Filter>头文件\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\SunBulletEx.h">
+      <Filter>头文件\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\StatusBar.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

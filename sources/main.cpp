@@ -13,6 +13,7 @@
 #include "Camera.h"
 #include "Platform.h"
 #include "Player.h"
+#include "Bullet.h"
 #include "Resources.h"
 
 ///////////////////////////////////////
@@ -23,10 +24,15 @@ bool g_is_game_running = true;			// 游戏是否正在运行
 
 Camera g_main_camera;					// 主摄像机
 
+std::vector<std::shared_ptr<Bullet>> g_bullet_list;	// 子弹列表
 std::vector<Platform> g_platform_list;	// 游戏中的平台列表
+
 
 std::unique_ptr<Player> g_player_1;		// 玩家 1
 std::unique_ptr<Player> g_player_2;		// 玩家 2
+
+IMAGE* g_img_player_1_avatar = nullptr;	// 玩家 1 的头像
+IMAGE* g_img_player_2_avatar = nullptr;	// 玩家 2 的头像
 
 
 ///////////////////////////////////////

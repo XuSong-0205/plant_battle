@@ -18,9 +18,9 @@ public:
 	};
 
 public:
-	CollisionShape m_shape;			// 平台形状
-	IMAGE* m_img = nullptr;			// 平台图片
-	POINT m_render_pos{ 0, 0 };		// 平台渲染位置
+	CollisionShape m_shape{ 0, 0, 0 };	// 平台形状
+	IMAGE* m_img = nullptr;				// 平台图片
+	POINT m_render_pos{ 0, 0 };			// 平台渲染位置
 
 };
 

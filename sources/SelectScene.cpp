@@ -39,6 +39,9 @@ extern IMAGE img_avatar_sunflower;
 extern std::unique_ptr<Player> g_player_1;
 extern std::unique_ptr<Player> g_player_2;
 
+extern IMAGE* g_img_player_1_avatar;
+extern IMAGE* g_img_player_2_avatar;
+
 ///////////////////////////////////////////
 
 
@@ -276,9 +279,11 @@ void S_SelectScene::on_exit()
 	{
 		case PlayerType::Peashooter:
 			g_player_1 = std::make_unique<PeashooterPlayer>();
+			g_img_player_1_avatar = &img_avatar_peashooter;
 			break;
 		case PlayerType::Sunflower:
 			g_player_1 = std::make_unique<SunflowerPlayer>();
+			g_img_player_1_avatar = &img_avatar_sunflower;
 			break;
 	}
 	g_player_1->set_id(PlayerID::P1);
@@ -287,9 +292,11 @@ void S_SelectScene::on_exit()
 	{
 		case PlayerType::Peashooter:
 			g_player_2 = std::make_unique<PeashooterPlayer>();
+			g_img_player_2_avatar = &img_avatar_peashooter;
 			break;
 		case PlayerType::Sunflower:
 			g_player_2 = std::make_unique<SunflowerPlayer>();
+			g_img_player_2_avatar = &img_avatar_sunflower;
 			break;
 	}
 	g_player_2->set_id(PlayerID::P2);

@@ -131,16 +131,21 @@
   <ItemGroup>
     <ClCompile Include="sources\Animation.cpp" />
     <ClCompile Include="sources\Atlas.cpp" />
+    <ClCompile Include="sources\Bullet.cpp" />
     <ClCompile Include="sources\Camera.cpp" />
     <ClCompile Include="sources\GameScene.cpp" />
     <ClCompile Include="sources\main.cpp" />
     <ClCompile Include="sources\MenuScene.cpp" />
+    <ClCompile Include="sources\PeaBullet.cpp" />
     <ClCompile Include="sources\PeashooterPlayer.cpp" />
     <ClCompile Include="sources\Platform.cpp" />
     <ClCompile Include="sources\Player.cpp" />
     <ClCompile Include="sources\Resources.cpp" />
     <ClCompile Include="sources\SceneManager.cpp" />
     <ClCompile Include="sources\SelectScene.cpp" />
+    <ClCompile Include="sources\StatusBar.cpp" />
+    <ClCompile Include="sources\SunBullet.cpp" />
+    <ClCompile Include="sources\SunBulletEx.cpp" />
     <ClCompile Include="sources\SunflowerPlayer.cpp" />
     <ClCompile Include="sources\Timer.cpp" />
     <ClCompile Include="sources\Utils.cpp" />
@@ -148,9 +153,11 @@
   <ItemGroup>
     <ClInclude Include="sources\Animation.h" />
     <ClInclude Include="sources\Atlas.h" />
+    <ClInclude Include="sources\Bullet.h" />
     <ClInclude Include="sources\Camera.h" />
     <ClInclude Include="sources\GameScene.h" />
     <ClInclude Include="sources\MenuScene.h" />
+    <ClInclude Include="sources\PeaBullet.h" />
     <ClInclude Include="sources\PeashooterPlayer.h" />
     <ClInclude Include="sources\Platform.h" />
     <ClInclude Include="sources\Player.h" />
@@ -159,6 +166,9 @@
     <ClInclude Include="sources\Scene.h" />
     <ClInclude Include="sources\SceneManager.h" />
     <ClInclude Include="sources\SelectScene.h" />
+    <ClInclude Include="sources\StatusBar.h" />
+    <ClInclude Include="sources\SunBullet.h" />
+    <ClInclude Include="sources\SunBulletEx.h" />
     <ClInclude Include="sources\SunflowerPlayer.h" />
     <ClInclude Include="sources\Timer.h" />
     <ClInclude Include="sources\Utils.h" />

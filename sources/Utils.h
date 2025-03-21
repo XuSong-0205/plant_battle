@@ -105,3 +105,6 @@ void outtextxy_shaded(int x, int y, LPCTSTR str,
 
 // 带摄像机参数的绘制直线
 void line(const Camera& camera, int x1, int y1, int x2, int y2);
+
+// 将图片处理为纯白色剪影
+void sketch_image(IMAGE* src, IMAGE* dst);

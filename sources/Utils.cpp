@@ -64,4 +64,22 @@ void line(const Camera& camera, int x1, int y1, int x2, int y2)
     line((int)x1_, (int)y1_, (int)x2_, (int)y2_);
 }
 
+void sketch_image(IMAGE* src, IMAGE* dst)
+{
+    const int w = src->getwidth();
+    const int h = src->getheight();
+    Resize(dst, w, h);
+    DWORD* src_buffer = GetImageBuffer(src);
+    DWORD* dst_buffer = GetImageBuffer(dst);
+    for (int y = 0; y < h; ++y)
+    {
+        for (int x = 0; x < w; ++x)
+        {
+            int idx = y * w + x;
+            dst_buffer[idx] = BGR(RGB(255, 255, 255)) | (src_buffer[idx] & 0xFF000000);
+        }
+    }
+
+}
+
 
